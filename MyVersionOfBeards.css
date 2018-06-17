@@ -1,17 +1,6 @@
 //META{"name":"MY_TWEAK","description":"My changes to Discord","author":"Buddy","version":"1.0"}*//{}
 /* "Discord Material Icons v1.7" by @Zerthox */
 
-/* BEARDS STABLE */
-@import url("https://cdn.rawgit.com/JamesAndrewJackson13/BetterDiscordThemeStuff/769b5837/Beard's%20Material%20Discord%20Theme%20-%20Stable%20Base.css")
-
-body {
-    --accent-color-dark: hsla(172, 51%, 25%, 1) !important;
-    --accent-color: #3fc1b0 !important;
-    --lvl1:#282e33;/*var(--lvl1)*/
-    --lvl2:#313b43;/*var(--lvl2)*/
-    --lvl25: #495159;
-    --lvl3:#3a4047;/*var(--lvl3)*/
-}
 
 #TitleforTitlebar {
     top:0px;
