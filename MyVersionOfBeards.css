@@ -478,7 +478,7 @@ div.side-8zPYf6 > div.separator-gCa7yv:nth-of-type(5n+6) {
     /* word-wrap: break-word; */
     left: 125px;
     right: 0;
-    width: auto;
+    width: fit-content;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     top: 50%;
     transform: translateY(-100%);
@@ -1687,19 +1687,15 @@ div#RANbutton-frame {
     max-width: 150px;
 }
 
-.avatar-small.stop-animation {
+/*.avatar-small.stop-animation {
     left: -11px !important;
     top: 5px !important;
-}
+}*/
 
 
 #friends .friends-table .friends-row .friends-column-name .discord-tag {
     position: relative !important;
     height: 100%;
-    /* width: 83px; */
-    min-width: 83px;
-    left: -105px;
-    top: 120px;
     text-align: center;
 }
 
@@ -1713,4 +1709,53 @@ div#RANbutton-frame {
     bottom: -4px;
     width: 100%;
     text-align: center;
+}
+
+#friends .friends-table .friends-row .friends-column-name .discord-tag .username:hover {
+    margin-left: calc(83px - 100%);
+}
+
+span.status-text > * {display: inline-block}
+
+#friends .friends-table .friends-row .friends-column-guilds .more-mutual-guilds-btn:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNv…4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+    background-size: 18px 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 30px;
+    min-width: 30px;
+    position: relative;
+    margin: 0;
+    border-radius: 100%;
+}
+
+#friends .friends-table .friends-row .friends-column-guilds > * {
+    margin: 0;
+}
+
+#friends .friends-table .friends-row {
+    flex-basis: 180px;
+    align-content: flex-start;
+    min-width: 180px;
+    max-width: 180px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#friends .friends-table .friends-row .friends-column-actions {
+    border-radius: 0!important;
+}
+
+#friends .friends-table .friends-row .friends-column-actions .friends-action {
+    transform: none;
+    transition: right 500ms cubic-bezier(.33, .01, 0, 1) !important;     
+    margin: 0;   
 }
